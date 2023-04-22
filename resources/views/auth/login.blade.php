@@ -1,13 +1,17 @@
 @extends('layouts.app')
 
+@vite(['resources/css/app_css/login.css'])
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Accedi') }}</div>
+        <div class="col-md-5">
+            <div class="card ">
 
                 <div class="card-body">
+                    <div class="accedi_custom">
+                        <h1>ACCEDI</h1>
+                    </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

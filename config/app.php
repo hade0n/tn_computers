@@ -18,6 +18,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'logo' => env('APP_LOGO', ''),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
