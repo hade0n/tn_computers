@@ -12,8 +12,17 @@ body{
     box-shadow: -5px 7px 8px 0px rgba(0,0,0,0.36);
 }
 
-.card .btn-primary {
-    --bs-btn-bg: #046bd2;
+.login-center {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.cred-container {
+    padding-bottom: 40px;
+}
+
+.btn-link {
+    font-size: 14px !important;
 }
 
 .card .btn-primary:hover {
@@ -24,12 +33,12 @@ body{
 
 .accedi_custom {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-top: 20px;
     
 }
 
 .accedi_custom h1 {
     font-weight:600;
-    font-size: 40px;
+    font-size: 50px;
 }
