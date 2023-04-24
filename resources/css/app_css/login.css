@@ -23,9 +23,9 @@ body{
 }
 
 .cred-container input[type="email"], input[type="password"] {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 10px 10px 10px 20px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.08) !important;
     border-radius: 30px;
     border: none ;
     color: #fff !important;
@@ -34,20 +34,44 @@ body{
 .cred-container input[type="checkbox"] {
     background-color: rgba(255, 255, 255, 0.08);
     border: none;
+    transition: all 0.5s;
 }
 
 .cred-container input[type="email"]:hover, input[type="password"]:hover {
     outline: solid 1px #fff !important; 
+    background-color: transparent !important;
+    transition: all 0.3s;
+}
+
+.cred-container input[type="checkbox"]:checked {
+    background-color: #0d6efd !important;
+    transition: all 0.5s;
+}
+
+.cred-container .btn-primary {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    outline: none !important;
 }
 
 ::placeholder {
     color: #fff !important;
 }
 
+.remember-me {
+    color: #0d6efd;
+}
+
 .btn-link {
     font-size: 16px !important;
     text-decoration: none !important;
     float: right;
+    color: #fff !important;
 }
 
 .card .btn-primary:hover {
@@ -64,7 +88,7 @@ body{
 .accedi_custom h1{
     padding-bottom: 70px;
     font-weight:600;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .accedi_custom h3 {
@@ -77,4 +101,8 @@ body{
 
 .form-check a {
     padding: 0;
+}
+
+.btn-primary {
+    border: none !important;
 }

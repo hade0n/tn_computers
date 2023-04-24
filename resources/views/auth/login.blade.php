@@ -1,4 +1,6 @@
-@extends('layouts.app') @vite(['resources/css/app_css/login.css', 'resources/css/normalize.css']) @section('content')
+@extends('layouts.app') 
+@vite(['resources/css/app_css/login.css', 'resources/css/app_css/normalize.css']) 
+@section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -14,7 +16,7 @@
                             @csrf
 
                             <div class="cred-container">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Mail"/>
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror shadow-none" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Mail"/>
 
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -22,7 +24,8 @@
                                 </span>
                                 @enderror
 
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password" />
+
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror shadow-none" name="password" required autocomplete="current-password" placeholder="Password" />
 
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -30,11 +33,13 @@
                                 </span>
                                 @enderror
 
+                                <button class="btn btn-primary btn-block" type="submit">ACCEDI</button>
+
                                 <div class="form-check">
                                     <div class="row">
                                         <div class="col-md-5">
-                                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                            <label class="form-check-label" for="remember">
+                                            <input class="form-check-input shadow-none" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                            <label class="form-check-label remember-me" for="remember">
                                                 {{ __('Resta Connesso') }}
                                             </label>
                                         </div>
