@@ -10,7 +10,7 @@
                         <div class="accedi_custom">
                             <h1>LOGIN</h1>
 
-                            <h3>Hai un account?</h3>
+                            <p>Hai un account? Altrimenti <a href="/register">registrati</a></p>
                         </div>
                         <form method="POST" action="{{ route('login') }}" class="form-login">
                             @csrf
