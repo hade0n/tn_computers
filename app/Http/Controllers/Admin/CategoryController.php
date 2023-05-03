@@ -36,7 +36,6 @@ class CategoryController extends Controller
 
             $category->image = $filename;
         }
-        $category->image = $validateData['image'];  
 
         $category->meta_title = $validateData['meta_title'];  
         $category->meta_keyword = $validateData['meta_keyword'];  
@@ -78,7 +77,6 @@ class CategoryController extends Controller
 
             $category->image = $filename;
         }
-        $category->image = $validateData['image'];  
 
         $category->meta_title = $validateData['meta_title'];  
         $category->meta_keyword = $validateData['meta_keyword'];  
